@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — VideoAgent</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6;
+         max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem; }
+  a { color: #0b62d0; }
+  @media (prefers-color-scheme: dark) { a { color: #79b8ff; } }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid rgba(128,128,128,.4); padding: .5rem .6rem; text-align: left;
+           vertical-align: top; font-size: .95rem; }
+  .wrap { overflow-x: auto; }
+  ul { padding-left: 1.2rem; }
+</style>
+</head>
+<body>
+<p><a href="./index.html">&larr; VideoAgent</a></p>
+<h1>Privacy Policy — VideoAgent</h1>
+<p><strong>Last updated:</strong> 17 July 2026</p>
+
+<h2>Who we are</h2>
+<p>VideoAgent is a personal, locally-run tool used by a single individual
+(Juha Sundell, contact:
+<a href="mailto:juha.sundell@gmail.com">juha.sundell@gmail.com</a>) to produce and
+publish his own original short videos to his own social media accounts.</p>
+<p>VideoAgent is <strong>not</strong> a service offered to other people. There are no
+other users, no accounts to create, and no data collected from anyone but the app
+owner himself.</p>
+
+<h2>Where the app runs</h2>
+<p>VideoAgent runs entirely on the owner's own personal computer. There is
+<strong>no server</strong>, <strong>no cloud backend</strong>, and <strong>no
+third-party data processor</strong>. Nothing you do on TikTok or YouTube is sent
+anywhere by this app.</p>
+
+<h2>What data the app accesses</h2>
+<p>The app accesses only the app owner's own data, and only for these purposes:</p>
+<div class="wrap">
+<table>
+<thead><tr><th>Data</th><th>Source</th><th>Why</th><th>Retention</th></tr></thead>
+<tbody>
+<tr><td>Owner's username and profile picture</td><td>TikTok <code>user.info.basic</code></td><td>Shown on the local approval screen so it is clear which account is about to post (required by TikTok's guidelines)</td><td>Session only; not stored</td></tr>
+<tr><td>OAuth access / refresh tokens</td><td>TikTok, Google</td><td>To upload the owner's own video to his own account after he approves it</td><td>Windows DPAPI store (current-user scope); deleted when the owner disconnects the account</td></tr>
+<tr><td>Public trending topics</td><td>YouTube Data API (<code>mostPopular</code>)</td><td>To see which subjects currently interest audiences</td><td>Local cache, expires within 48 hours</td></tr>
+<tr><td>The owner's own video performance metrics</td><td>YouTube Analytics API, TikTok Display API</td><td>To help the owner decide what to make next</td><td>Local only</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>What the app does NOT do</h2>
+<ul>
+<li>It does <strong>not</strong> collect, store or process data about any other person.</li>
+<li>It does <strong>not</strong> download, re-host or re-publish anyone else's videos, audio, music, images or text.</li>
+<li>It does <strong>not</strong> scrape any platform, bypass any login, or evade any limit.</li>
+<li>It does <strong>not</strong> sell, share, or transfer any data to anyone.</li>
+<li>It does <strong>not</strong> publish anything automatically. Every upload requires the owner's explicit approval of that specific file.</li>
+<li>It does <strong>not</strong> use cookies, advertising identifiers, or tracking of any kind.</li>
+</ul>
+
+<h2>Third-party services</h2>
+<p>The app communicates only with the official APIs of TikTok and Google/YouTube, using
+official OAuth. Their handling of data is governed by their own privacy policies:</p>
+<ul>
+<li>TikTok: <a href="https://www.tiktok.com/legal/privacy-policy">https://www.tiktok.com/legal/privacy-policy</a></li>
+<li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+
+<h2>AI disclosure</h2>
+<p>Video scripts are drafted with a language model running locally on the owner's own
+machine, constrained to facts that have been verified against cited primary sources.
+Narration is synthetic text-to-speech of that original script — it is not a real
+person's voice and does not imitate any real person. This is disclosed in the videos'
+descriptions.</p>
+
+<h2>Your rights / control</h2>
+<p>Because the app processes only the owner's own data, there is no third-party data to
+request, correct or delete. The owner can at any time, from within the app:</p>
+<ul>
+<li>see which accounts are connected and what permissions were granted</li>
+<li>revoke access to any connected account</li>
+<li>switch to a different account</li>
+<li>immediately disable all publishing</li>
+</ul>
+<p>Revoking access in the app deletes the stored tokens from the local DPAPI store.
+Access can also be revoked directly in TikTok's and Google's own account settings.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children and collects no data from them.</p>
+
+<h2>Changes</h2>
+<p>Any change to this policy will be published at this URL with an updated date.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:juha.sundell@gmail.com">juha.sundell@gmail.com</a></p>
+</body>
+</html>
